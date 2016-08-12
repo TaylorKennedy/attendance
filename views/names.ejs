@@ -11,9 +11,9 @@
     </form>
 
     <ul>
-      <% names.forEach(function(name) { %>
-        <li><%= name %></li>
-      <% }) %>
+      <% for(name in names){ %>
+        <li><%= name %>  - <%=names[name]%></li>
+      <% } %>
     </ul>
   </body>
 </html>
